@@ -101,7 +101,7 @@ describe('THE USER ROUTES TEST MODULE =================================', functi
     describe('with valid basic-auth:', () => {
       it('should return a token', done => {
         request.get(`${url}/api/login`)
-        .auth('turtlefish', 'bruh')
+        .auth('awesomeman', 'isawesome')
         .end((err, res) => {
           if (err) return done(err);
           expect(res.status).to.equal(200);
